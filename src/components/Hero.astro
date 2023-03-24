@@ -1,5 +1,5 @@
 ---
- let imgSrc = "/src/img/hape2.png";
+import Image from "../widget/Image.svelte";
 ---
 <div class="relative overflow-hidden">
   <main>
@@ -36,7 +36,7 @@
           </div>
           <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
             <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-              <img class="hidden lg:block" src={imgSrc} alt="" decoding="async" />
+              <Image client:visible class="hidden lg:block" src="src/img/hape2.png" alt="" decoding="async" />
             </div>
           </div>
         </div>
